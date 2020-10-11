@@ -1,0 +1,1 @@
+﻿<%@ ServiceHost Language="C#" Debug="true" Service="Calculator_Add_Numbers_Service.Service1" CodeBehind="Service1.svc.cs" %>

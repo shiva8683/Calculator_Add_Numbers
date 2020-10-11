@@ -4,6 +4,16 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 VisualStudioVersion = 15.0.28307.1062
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Test_2_Calculator_Add_Numbers", "Test_2_Calculator_Add_Numbers\Test_2_Calculator_Add_Numbers.csproj", "{FB053736-0F87-4FC4-A2DF-5D47170E21DC}"
+	ProjectSection(ProjectDependencies) = postProject
+		{CC36E5FF-24C6-4134-B6B3-7C7BE74A91D5} = {CC36E5FF-24C6-4134-B6B3-7C7BE74A91D5}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Calculator_Add_Numbers_Service", "Calculator_Add_Numbers_Service\Calculator_Add_Numbers_Service.csproj", "{CC36E5FF-24C6-4134-B6B3-7C7BE74A91D5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Calculator_Add_Numbers_Service_Test", "Calculator_Add_Numbers_Service_Test\Calculator_Add_Numbers_Service_Test.csproj", "{39AC159D-0126-4066-B071-802306A9C978}"
+	ProjectSection(ProjectDependencies) = postProject
+		{CC36E5FF-24C6-4134-B6B3-7C7BE74A91D5} = {CC36E5FF-24C6-4134-B6B3-7C7BE74A91D5}
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +25,14 @@ Global
 		{FB053736-0F87-4FC4-A2DF-5D47170E21DC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FB053736-0F87-4FC4-A2DF-5D47170E21DC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FB053736-0F87-4FC4-A2DF-5D47170E21DC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CC36E5FF-24C6-4134-B6B3-7C7BE74A91D5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CC36E5FF-24C6-4134-B6B3-7C7BE74A91D5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CC36E5FF-24C6-4134-B6B3-7C7BE74A91D5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CC36E5FF-24C6-4134-B6B3-7C7BE74A91D5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{39AC159D-0126-4066-B071-802306A9C978}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{39AC159D-0126-4066-B071-802306A9C978}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{39AC159D-0126-4066-B071-802306A9C978}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{39AC159D-0126-4066-B071-802306A9C978}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

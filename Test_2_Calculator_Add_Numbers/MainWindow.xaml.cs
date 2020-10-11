@@ -1,17 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.Text.RegularExpressions;
 using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
 using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
 
 namespace Test_2_Calculator_Add_Numbers
 {
@@ -23,6 +13,27 @@ namespace Test_2_Calculator_Add_Numbers
         public MainWindow()
         {
             InitializeComponent();
+        }
+
+        /// <summary>
+        /// Taking input text and passing it to the "Add" service and appending the result to the label
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void BtnCalculate_Click(object sender, RoutedEventArgs e)
+        {
+            try
+            {
+                CalculatorService.CalculatorClient calculatorClient = new CalculatorService.CalculatorClient();
+                var addResult = calculatorClient.Add(Regex.Unescape(txtInput.Text));
+                lblResult.Foreground = Brushes.Black;
+                lblResult.Content = $"Sum of the Numbers: {addResult}";
+            }
+            catch (Exception ex)
+            {
+                lblResult.Foreground = Brushes.Red;
+                lblResult.Content = ex.Message;
+            }
         }
     }
 }

@@ -7,6 +7,8 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        
+        <TextBox HorizontalAlignment="Left" AcceptsReturn="True" VerticalScrollBarVisibility="Visible" Name="txtInput" Height="70" Margin="65,78,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="451"/>
+        <Button Content="Calculate" Click="BtnCalculate_Click" Name="btnCalculate" HorizontalAlignment="Left" Margin="535,78,0,0" VerticalAlignment="Top" Width="75"/>
+        <Label Content="" Name="lblResult" HorizontalAlignment="Left" Margin="65,187,0,0" VerticalAlignment="Top"/>
     </Grid>
 </Window>
